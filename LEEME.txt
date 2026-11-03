@@ -1,0 +1,37 @@
+PENGUIN RUSH ONLINE - BETA
+===========================
+
+Esta carpeta contiene el juego web y el servidor multijugador.
+
+IMPORTANTE
+- Es una beta: escenario 3D sencillo con Three.js, pingüinos, salas por código y movimiento sincronizado.
+- No es una copia de Stumble Guys.
+- Las reglas de clasificación y las animaciones todavía necesitan pruebas y mejoras.
+- El servidor admite hasta 30 conexiones por sala.
+- Para que tus amigos jueguen desde otras computadoras, el servidor debe estar encendido y todos deben poder acceder a su dirección.
+- Para publicar en internet, conecta este repositorio a un servicio de hosting Node.js. Para jugar en el salón, puedes ejecutar el servidor en una computadora y permitir Node.js en el firewall de Windows.
+
+PROBAR EN TU COMPUTADORA (Windows)
+1. Instala Node.js LTS desde https://nodejs.org/
+2. Abre esta carpeta.
+3. En la barra de dirección del Explorador escribe cmd y presiona Enter.
+4. Escribe: npm install
+5. Cuando termine, escribe: npm start
+6. En esa computadora abre: http://localhost:3000
+7. Para que otros equipos en el mismo Wi-Fi entren, busca la IPv4 de esta computadora con ipconfig y abre http://IP-DE-LA-COMPUTADORA:3000 en sus navegadores.
+8. Si Windows pregunta por el firewall, permite Node.js en redes privadas.
+
+PUBLICAR EN INTERNET
+1. Crea un repositorio nuevo en GitHub.
+2. Sube los archivos de esta carpeta (package.json, server.js y la carpeta public).
+3. En Render crea un Web Service conectado al repositorio.
+4. Build Command: npm install
+5. Start Command: npm start
+6. Cuando Render dé la dirección HTTPS, compártela con tus amigos.
+
+CONTROLES
+W / flecha arriba: avanzar
+A-D / flechas izquierda-derecha: moverse
+Espacio: saltar
+
+Si no se ve el escenario, comprueba que el navegador tenga acceso a internet para cargar Three.js desde CDN.
